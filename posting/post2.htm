@@ -1,0 +1,15 @@
+
+cara mengatasi error composer:
+Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0"
+
+
+1. buka dan edit composer.json
+
+2. perhatikan object config dan masukan kode dibawah ini:
+ "platform-check": false
+
+3. jalankan kode ini di cmd/terminal:
+php artisan config:cache
+
+3. selanjutnya jalan kode ini di cmd/terminal:
+composer dump-autoload
